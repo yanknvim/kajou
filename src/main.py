@@ -95,13 +95,15 @@ def shuffle_song(playlist):
             print(e)
 
 
-fire.Fire(
-    {
-        "add": add_song,
-        "insert": insert_song,
-        "list": list_song,
-        "remove": remove_song,
-        "sort": sort_song,
-        "shuffle": shuffle_song,
-    }
-)
+def main():
+    fire.Fire(
+        {
+            "add": add_song,
+            "insert": insert_song,
+            "list": list_song,
+            "remove": remove_song,
+            "sort": sort_song,
+            "shuffle": shuffle_song,
+        }
+    )
+
